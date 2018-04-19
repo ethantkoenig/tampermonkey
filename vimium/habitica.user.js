@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 function makeClickable($node) {
-    $node.find('.task-clickable-area, .task-control, .task-reward')
+    $node.find('.task-clickable-area, .task-control, .task-reward, .drawer-toggle-icon, .spell')
         .attr('role', 'button');
 }
 
