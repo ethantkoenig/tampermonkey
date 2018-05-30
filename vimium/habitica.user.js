@@ -10,8 +10,14 @@
 // ==/UserScript==
 
 function makeClickable($node) {
-    $node.find('.task-clickable-area, .task-control, .task-reward, .drawer-toggle-icon, .spell')
-        .attr('role', 'button');
+    $node.find(
+      '.task-clickable-area, ' +
+      '.task-control, ' +
+      '.task-reward, ' +
+      '.drawer-toggle-icon, ' +
+      '.spell, ' +
+      '.collapse-checklist'
+    ).attr('role', 'button');
 }
 
 (function() {
